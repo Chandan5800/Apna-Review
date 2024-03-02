@@ -36,7 +36,7 @@ const numbers = [
   },
 ];
 
-const FbDefaultForm = () => {
+const AddProduct = () => {
   const [state, setState] = React.useState({
     checkedA: false,
     checkedB: false,
@@ -249,4 +249,4 @@ const FbDefaultForm = () => {
   );
 };
 
-export default FbDefaultForm;
+export default AddProduct;

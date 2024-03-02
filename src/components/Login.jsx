@@ -47,11 +47,11 @@ export default function Login() {
       return;
     }
     
-    // if (loginDetail.username === "210101120148@cutm.ac.in" && loginDetail.password === "danish") {
-    //   // Redirect to the admin panel
-    //   navigate("/admin-dashboard");
-    //   return;
-    // }
+    if (loginDetail.username === "210101120148@cutm.ac.in" && loginDetail.password === "danish") {
+      // Redirect to the admin panel
+      navigate("/admin-dashboard");
+      return;
+    }
 
     login(loginDetail).then((data) => {
       console.log(data)

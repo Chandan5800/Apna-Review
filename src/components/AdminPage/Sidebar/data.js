@@ -17,7 +17,7 @@ const Menuitems = [
   {
     title: "Add Product",
     icon: DescriptionOutlinedIcon,
-    href: "form-layouts",
+    href: "add-product",
   },
   // {
   //   title: "Autocomplete",
