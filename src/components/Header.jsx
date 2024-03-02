@@ -165,7 +165,7 @@ export default function Header() {
   }
 
   return (
-    <div className="bg-white z-50">
+    <div className="bg-white z-[2000px]">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -206,7 +206,7 @@ export default function Header() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white">
+      <header className="fixed-top bg-white ">
 
         <nav aria-label="Top" className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="border-b border-gray-200">
@@ -283,7 +283,7 @@ export default function Header() {
                           login && (
                             <>
                               <MenuItem>
-                                <NavLink tag={ReactLink} to="/user/profile">
+                                <NavLink tag={ReactLink} to="/profile">
                                   Profile
                                 </NavLink>
                               </MenuItem>

@@ -1,12 +1,11 @@
-import React from 'react'
-import Base from '../components/Base'
-import HomeCarousel from '../components/HomeCarousel/Carousel'
+import React from "react";
+import Base from '../Base'
+import HomeCarousel from "../HomePage/Carousel";
 
 const Home = () => {
   return (
-    <Base >
+    <Base>
       <div>
-
         <HomeCarousel />
 
         {/* <div class="relative">
@@ -15,7 +14,7 @@ const Home = () => {
     </div> */}
       </div>
     </Base>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

@@ -1,27 +1,29 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
+// import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Grid, Paper, TextField } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { login } from "../Services/UserService";
 import { doLogin } from "../Auth";
+import Base from "./Base";
 
-const bull = (
-  <Box component="span" sx={{ mx: "2px", transform: "scale(0.8)" }}>
-    •
-  </Box>
-);
+// const bull = (
+//   <Box component="span" sx={{ mx: "2px", transform: "scale(0.8)" }}>
+//     •
+//   </Box>
+// );
 
 export default function Login() {
   const paperStyle = {
     padding: 40,
     height: "70vh",
     width: 500,
-    margin: "80px auto",
+    margin: "120px auto",
   };
 
   let navigate = useNavigate();
+  
   const [loginDetail, setLoginDetail] = React.useState({
     username:'',
     password:''
@@ -40,10 +42,16 @@ export default function Login() {
     event.preventDefault();
     console.log(loginDetail);
 
-    if(loginDetail.username.trim() == '' || loginDetail.password.trim() == ''){
+    if(loginDetail.username.trim() === '' || loginDetail.password.trim() === ''){
       toast.error("Username and password is required...!!")
       return;
     }
+    
+    // if (loginDetail.username === "210101120148@cutm.ac.in" && loginDetail.password === "danish") {
+    //   // Redirect to the admin panel
+    //   navigate("/admin-dashboard");
+    //   return;
+    // }
 
     login(loginDetail).then((data) => {
       console.log(data)
@@ -60,7 +68,7 @@ export default function Login() {
     })
   }; 
   return (
-    <div>
+    <Base>
       <form onSubmit={handleFormSubmit}>
         <Grid>
           <Paper elevation={10} style={paperStyle}>
@@ -110,6 +118,6 @@ export default function Login() {
           </Paper>
         </Grid>
       </form>
-    </div>
+    </Base>
   );
 }

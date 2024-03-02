@@ -4,13 +4,14 @@ import { useNavigate } from "react-router-dom";
 import { Button, FormHelperText, Grid, Paper, TextField } from "@mui/material";
 import { signUp } from "../Services/UserService";
 import { toast } from "react-toastify";
+import Base from "./Base";
 
 const Signup = () => {
   const paperStyle = {
     padding: 40,
     height: "80vh",
     width: 500,
-    margin: "80px auto",
+    margin: "90px auto",
   };
   const navigate = useNavigate();
   const [data, setData] = useState({
@@ -53,7 +54,7 @@ const Signup = () => {
     })
   };
   return (
-      <div>
+      <Base>
       <form onSubmit={submitForm}>
         <Grid>
           <Paper elevation={10} style={paperStyle}>
@@ -144,7 +145,7 @@ const Signup = () => {
           </Paper>
         </Grid>
       </form>
-      </div>
+      </Base>
   );
 };
 
