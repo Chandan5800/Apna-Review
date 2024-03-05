@@ -19,5 +19,6 @@ export const carouselData = [
     {
         image:img4,
         path:""
-    },
+    }
+    
 ]

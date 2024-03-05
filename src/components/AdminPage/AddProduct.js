@@ -126,18 +126,7 @@ const AddProduct = () => {
                 mb: 2,
               }}
             />
-            {/* <TextField
-              id="readonly-text"
-              label="Read Only"
-              inputprops={{
-                readOnly: true,
-              }}
-              variant="outlined"
-              fullWidth
-              sx={{
-                mb: 2,
-              }}
-            /> */}
+            
             <Grid
               container
               spacing={0}
@@ -145,67 +134,7 @@ const AddProduct = () => {
                 mb: 2,
               }}
             >
-              {/* <Grid item lg={4} md={6} sm={12}>
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={state.checkedA}
-                      onChange={handleChange}
-                      name="checkedA"
-                      color="primary"
-                    />
-                  }
-                  label="Check this custom checkbox"
-                />
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={state.checkedB}
-                      onChange={handleChange}
-                      name="checkedB"
-                      color="primary"
-                    />
-                  }
-                  label="Check this custom checkbox"
-                />
-                <FormControlLabel
-                  control={
-                    <Checkbox
-                      checked={state.checkedC}
-                      onChange={handleChange}
-                      name="checkedC"
-                      color="primary"
-                    />
-                  }
-                  label="Check this custom checkbox"
-                />
-              </Grid> */}
-              {/* <Grid item lg={4} md={6} sm={12}>
-                <FormControl component="fieldset">
-                  <RadioGroup
-                    aria-label="gender"
-                    name="gender1"
-                    value={value}
-                    onChange={handleChange2}
-                  >
-                    <FormControlLabel
-                      value="radio1"
-                      control={<Radio />}
-                      label="Toggle this custom radio"
-                    />
-                    <FormControlLabel
-                      value="radio2"
-                      control={<Radio />}
-                      label="Toggle this custom radio"
-                    />
-                    <FormControlLabel
-                      value="radio3"
-                      control={<Radio />}
-                      label="Toggle this custom radio"
-                    />
-                  </RadioGroup>
-                </FormControl>
-              </Grid> */}
+              
             </Grid>
             <TextField
               fullWidth

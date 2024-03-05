@@ -111,8 +111,12 @@ export default function Login() {
             </Grid>
             <div className="flex justify-center flex-col items-center">
                 <div className="py-3 flex items-center">
-                  <p>if you don't have account ?</p>
-                  <Button onClick={() => navigate("/register")} className="ml-5 py-0">Register</Button>
+                  <p >If you don't have account ?
+                  <Button onClick={() => navigate("/register")} className="ml-5 py-0 ">Register</Button>
+                  </p>
+                </div>
+                <div className="mt-0">
+                <Button onClick={() => navigate("/forget")} className="ml-5 py-0 ">Forget Password</Button>
                 </div>
               </div>
           </Paper>

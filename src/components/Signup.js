@@ -138,8 +138,9 @@ const Signup = () => {
             </Grid>
             <div className='flex justify-center flex-col items-center'>
         <div className='py-3 flex items-center'>
-          <p>if you have already account ?</p>
+          <p>if you have already account ?
           <Button onClick={() => navigate("/login")} className='ml-5 py-0'>Login</Button>
+          </p>
         </div>
       </div>
           </Paper>

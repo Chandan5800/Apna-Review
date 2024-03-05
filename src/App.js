@@ -3,7 +3,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/HomePage/Home";
 import Login from "./components/Login";
-import About from "./components/About";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import Signup from "./components/Signup";
@@ -13,6 +12,10 @@ import { ThemeProvider } from "@mui/material/styles";
 import { baseTheme } from "./assets/global/Theme-variable";
 import Themeroutes from "./routes/Router";
 import Header from "./components/Header";
+import Forgetpassword from "./components/Forgetpassword";
+import About from "./components/About/About"
+import Aboutmore from "./components/About/Aboutmore";
+import ContactUs from "./components/Contact/ContactUs";
 
 function App() {
   const routing = useRoutes(Themeroutes);
@@ -26,6 +29,10 @@ function App() {
         <Route path="/register" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/profile" element={<Profile />} />
+        <Route path="/forget" element={<Forgetpassword />} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/aboutmore" element={<Aboutmore />} /> 
+        <Route path="/contact" element={<ContactUs />} /> 
       </Routes>
       <ThemeProvider theme={theme}>{routing}</ThemeProvider>
     </>

@@ -1,0 +1,74 @@
+/* CSS for the text overlay */
+.text-overlay {
+    position: absolute;
+    top: 55%; /* Adjust vertical position */
+    left: 50%; /* Adjust horizontal position */
+    transform: translate(-50%, -50%);
+    font-size: 24px; /* Adjust font size */
+    color: rgb(10, 10, 10); /* Text color */
+    background-color: rgb(255, 255, 255); /* Semi-transparent background */
+    padding: 10px; /* Padding around text */
+    z-index: 1; /* Ensure the text is on top of the image */
+    border-radius: 15px;
+    margin-top: 1%;
+     width: 40%; 
+     height: 80%;
+  }
+  
+   h1 {
+    font-size: 32px;
+    color: #0e0d0d;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 18px;
+    color: #090909;
+  }
+  
+  .form1 {
+    margin: 10px;
+  }
+  
+  .label1 {
+    display: block;
+    font-size: 16px;
+    color: #070707;
+    font-size: 20px;
+  }
+  
+  .input1, textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    font-size: 15px;
+    background-color: rgb(245, 248, 250);
+  }
+ 
+  .but {
+    background-color:rgb(139, 175, 234);
+    color: white;
+    padding: 3px 20px;
+    cursor: pointer;
+    height: 40px;
+    width:120px;
+    border: solid 1px black;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+  } 
+  .but:hover{
+    background-color: rgb(35, 84, 35);
+  }
+  
+  .success-message {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+  }
+  

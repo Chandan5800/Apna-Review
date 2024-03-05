@@ -1,0 +1,31 @@
+.text-overlay1 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 55%;
+  /* Adjust vertical position */
+  left: 50%;
+  /* Adjust horizontal position */
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  /* Adjust font size */
+  color: rgb(10, 10, 10);
+  /* Text color */
+  background-color: rgb(255, 255, 255);
+  /* Semi-transparent background */
+  padding: 10px;
+  /* Padding around text */
+  z-index: 1;
+  /* Ensure the text is on top of the image */
+
+
+}
+
+h4 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}

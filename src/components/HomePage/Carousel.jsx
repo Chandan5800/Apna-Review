@@ -6,7 +6,7 @@ import { carouselData } from './CarouselData';
 
 const HomeCarousel = () => {
 
-    const items = carouselData.map((item) => <img className='w-full h-[600px] cursor-pointer' role='presentation' src={item.image} alt='' />)
+    const items = carouselData.map((item) => <img className='w-full h-[650px] cursor-pointer' role='presentation' src={item.image} alt='' />)
 
     return (
         <div>
