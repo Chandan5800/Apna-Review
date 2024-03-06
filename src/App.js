@@ -16,6 +16,7 @@ import Forgetpassword from "./components/Forgetpassword";
 import About from "./components/About/About"
 import Aboutmore from "./components/About/Aboutmore";
 import ContactUs from "./components/Contact/ContactUs";
+import ProductDetails from './components/ProductInfo/ProductDetails'
 
 function App() {
   const routing = useRoutes(Themeroutes);
@@ -33,6 +34,8 @@ function App() {
         <Route path="/about" element={<About/>} />
         <Route path="/aboutmore" element={<Aboutmore />} /> 
         <Route path="/contact" element={<ContactUs />} /> 
+        <Route path="/productdetails" element={<ProductDetails />} /> 
+
       </Routes>
       <ThemeProvider theme={theme}>{routing}</ThemeProvider>
     </>
